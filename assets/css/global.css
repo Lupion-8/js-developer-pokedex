@@ -21,4 +21,132 @@ body {
         margin: 1rem auto;
         border-radius: 1rem;
     }
+
+   
+}
+
+.dlt {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 69vw;
+    height: 53vw;
+    border-radius: 1vw;
+    top: 0vw;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(-1);
+    padding: 1vw;
+}
+
+.controlls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controlls> :nth-child(1) {
+    font-size: 2vw;
+}
+
+.controlls> :nth-child(2) {
+    display: flex;
+    border-radius: 14vw;
+    padding: 0.5vw;
+    width: 2vw;
+    background: black;
+    color: white;
+    height: 2vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pokes {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: 1s;
+}
+
+.ficha {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.infos>h2>p {
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+
+.infos>h3>p {
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+
+.detalhesBicho {
+    display: flex;
+    justify-content: flex-end;
+}
+.desciption{font-family: 'Roboto', sans-serif;max-width: 44vw;margin: auto;font-size: 1.5vw;}
+.ftb {
+    width: 20vw;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    
+    .dlt {
+        display: flex;
+        width: 100%;
+        height: 104vh;
+        left: 0vh;
+        font-size: 7vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .controlls> :nth-child(1) {
+        font-size: 5vw;
+    }
+
+    .controlls> :nth-child(2) {
+        display: flex;
+        border-radius: 14vw;
+        padding: 0.5vw;
+        width: 7vw;
+        background: black;
+        color: white;
+        height: 7vw;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .infos >p{
+        font-size: 4vw !important;
+    }
+
+    .desciption {
+        font-family: 'Roboto', sans-serif;
+        max-width: 75vw;
+        margin: auto;
+        font-size: 4vw;
+    }
+
+    .ftb {
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dlt {
+        display: flex;
+        width: 100%;
+        height: 99vh;
+        left: 0vh;
+        font-size: 2vw;
+        flex-direction: column;
+    }
 }
